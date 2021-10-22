@@ -45,7 +45,7 @@ function Main(props){
         </Route>
       </Switch>
     </div>
-    )
+    );
 }
 
 export default Main;
