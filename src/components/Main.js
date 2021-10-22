@@ -7,17 +7,17 @@ import About from '../pages/About'
 function Main(props){
     const [blog, setBlog] = useState(null);
 
-    const URL = 'https://delights-backend.herokuapp.com/home';
+    const URL = 'https://delights-backend.herokuapp.com/';
 
     const getBlog = async () => {
-        const response = await fetch (URL);
+        const response = await fetch (`${URL}home`);
         const data = await response.json();
         setBlog(data);
     }
 
     const createBlog = async (post) => {
         // request to create a blog post
-        await fetch (URL, {
+        await fetch (`${URL}post`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'Application/json',
@@ -38,7 +38,7 @@ function Main(props){
           <Home blog={blog} createBlog={createBlog}/>
         </Route>
         <Route path='/recipes'>
-          <Recipes />
+          <Recipes blog={blog}/>
         </Route>
         <Route path='/about'>
           <About />
