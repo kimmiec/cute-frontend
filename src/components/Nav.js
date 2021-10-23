@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 const Nav = (props) => {
     return (
         <div className='nav'>
+            <div className='header'>
+                <h1>Cute Delights</h1>
+            </div>
             <Link to='/'>
                 <div>Home</div>
             </Link>
