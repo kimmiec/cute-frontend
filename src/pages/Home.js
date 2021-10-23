@@ -34,7 +34,8 @@ function Home(props) {
             image: '',
             desc: ''
         })
-        console.log('event', event)
+        setIsOpen(false)
+        // console.log('event', event)
     }
 
 

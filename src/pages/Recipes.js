@@ -2,15 +2,15 @@ import Modal from '../components/Modal';
 import {useState} from 'react';
 
 const recipeInfo = {
-    position: 'relative',
-    zIndex: 1
+    // position: 'relative',
+    // zIndex: 1
 }
 
 const recipeBook = {
-    position: 'relatve',
-    zIndex: 2,
+    // position: 'relatve',
+    // zIndex: 2,
     // backgroundColor: 'lightseagreen',
-    padding: '10px'
+    // padding: '10px'
 }
 
 function Recipes (props) {
