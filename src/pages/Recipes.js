@@ -1,17 +1,3 @@
-import Modal from '../components/Modal';
-import {useState} from 'react';
-
-const recipeInfo = {
-    // position: 'relative',
-    // zIndex: 1
-}
-
-const recipeBook = {
-    // position: 'relatve',
-    // zIndex: 2,
-    // backgroundColor: 'lightseagreen',
-    // padding: '10px'
-}
 
 function Recipes (props) {
 
@@ -26,7 +12,6 @@ function Recipes (props) {
     //         <p>{recipe.info}</p>
     //     </div>
     // )
-    const [isOpen, setIsOpen] = useState(false)
     
     const recipes = props.blog;
 
@@ -36,12 +21,7 @@ function Recipes (props) {
             <div key={ingred._id} className='recipe' style={recipeBook}>
                 <h2>{ingred.name}</h2>
                 <img src={ingred.image} alt={ingred.name} />
-                <div style={recipeInfo}>
-                <button onClick={() => setIsOpen(true)}>Noms!</button>
-                <Modal open={isOpen} onClose={() =>setIsOpen(false)}>
                 <p>Recipe:{ingred.info}</p>
-                </Modal>
-                </div>
             </div>
             </>
         ))
