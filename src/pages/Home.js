@@ -69,6 +69,7 @@ function Home(props) {
                         placeholder='name'
                         onChange={handleChange}
                         />
+                        <br/>
                     <input
                         type='text'
                         value={newPost.image}
@@ -76,6 +77,7 @@ function Home(props) {
                         placeholder='image'
                         onChange={handleChange}
                         />
+                        <br/>
                     <input
                         type='text'
                         value={newPost.desc}
@@ -83,13 +85,15 @@ function Home(props) {
                         placeholder='desc'
                         onChange={handleChange}
                         />
+                        <br/>
                     <input 
                     type='text'
                     value={newPost.info}
                     name='info'
                     placeholder='info'
                     onChange={handleChange}
-                />
+                    />
+                    <br/>
                     <input type='submit' value='Create Post' />
                 </form>
                 </Modal>

@@ -18,10 +18,12 @@ function Recipes (props) {
     const loaded = () => {
         return recipes.map((ingred) =>(
             <>
-            <div key={ingred._id} className='recipe' style={recipeBook}>
+            <div key={ingred._id} className='recipe'>
                 <h2>{ingred.name}</h2>
                 <img src={ingred.image} alt={ingred.name} />
+                <div className='card' style={{maxHeight: '100%', overflowY: 'auto'}}>
                 <p>Recipe:{ingred.info}</p>
+                </div>
             </div>
             </>
         ))
