@@ -2,40 +2,62 @@
   text-align: center;
 }
 
+.header {
+  width: 100%;
+  height: 400px;
+  background: url('https://i.imgur.com/GPxNPJW.jpg');
+  contain: content;
+  background-position: center bottom;
+  /* position: fixed; */
+  /* top: 0; */
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .header img{
   /* background: url('https://i.imgur.com/tcrY8Qz.png'); */
-  /* background-size: cover; */
-  background-position: center;
-  background-attachment: fixed;
   background-size: cover;
-  max-width: 100%;
-  height: 500px;
+  background-position: bottom;
+  /* background-attachment: fixed; */
   /* margin: 90px 0px 90px 0px; */
-  z-index: 1;
+  z-index: 0;
+  background-color: grey;
 }
+
 
 .nav {
   position: relative;
-  background-color: rgba(234,138,149,0.5);
+  display: flex;
+  background-color: rgba(234,138,149,0.6);
   padding: 10px 0px;
-  z-index: 2;
-  /* ^ specifies a stack order, so it would be higher than the image */
-  margin: 50px 0px;
+  bottom: 0;
+  align-items: bottom;
+  width: 100%;
+  justify-content: space-evenly;
+  border: 1px solid white;
 }
 
 .home, .recipes, .abt {
   display: inline-block;
-  padding: 0px 150px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  color: white;
 }
 
+.imgDiv {
+  height: 361.5px;
+}
 
 .title {
-  position: relative;
-  margin-top: -150px;
-  padding-top: -30px;
-  z-index: 2;
+  /* position: relative; */
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 170px;
+  /* z-index: 2; */
+  /* background-color: mediumaquamarine; */
 }
 
 .pic {
