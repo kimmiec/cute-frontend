@@ -19,10 +19,10 @@ function Recipes (props) {
         return recipes.map((ingred) =>(
             <>
             <div key={ingred._id} className='recipe'>
-                <h2>{ingred.name}</h2>
-                <img src={ingred.image} alt={ingred.name} />
+                <h2 className='name'>{ingred.name}</h2>
+                <img className='pic' src={ingred.image} alt={ingred.name} />
                 <div className='card' style={{maxHeight: '100%', overflowY: 'auto'}}>
-                <p>Recipe:{ingred.info}</p>
+                <p>Recipe: {ingred.info}</p>
                 </div>
             </div>
             </>

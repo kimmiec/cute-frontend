@@ -44,7 +44,7 @@ function Home(props) {
         return props.blog.map((memo) => (
             <div key={memo._id} className='blog' style={blogPost}>
                 <h2>{memo.name}</h2>
-                <img src={memo.image} alt={memo.name} />
+                <img className='pic' src={memo.image} alt={memo.name} />
                 <p>{memo.desc}</p>
             </div>
         ))
