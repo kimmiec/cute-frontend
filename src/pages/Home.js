@@ -61,8 +61,8 @@ function Home(props) {
             <div className='modal' style={btnWrap}>
                 <button onClick={() => setIsOpen(true)}>+ Create Post</button>
                 <Modal open={isOpen} onClose={()=>setIsOpen(false)}>
-                <form onSubmit={handleSubmit}>
-                    <input
+                <form className='form' onSubmit={handleSubmit}>
+                    <input className='b1'
                         type='text'
                         value={newPost.name}
                         name='name'
@@ -70,7 +70,7 @@ function Home(props) {
                         onChange={handleChange}
                         />
                         <br/>
-                    <input
+                    <input className='b2'
                         type='text'
                         value={newPost.image}
                         name='image'
@@ -78,7 +78,7 @@ function Home(props) {
                         onChange={handleChange}
                         />
                         <br/>
-                    <input
+                    <input className='b3'
                         type='text'
                         value={newPost.desc}
                         name='desc'
@@ -86,7 +86,7 @@ function Home(props) {
                         onChange={handleChange}
                         />
                         <br/>
-                    <input 
+                    <input className='b4'
                     type='text'
                     value={newPost.info}
                     name='info'

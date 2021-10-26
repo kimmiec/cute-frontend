@@ -6,9 +6,9 @@ const modalStyle = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    backgroundColor: 'rgba(234,247,252,255)',
-    padding: '50px',
-    zIndex: 1000
+    backgroundColor: 'rgba(255,237,171,255)',
+    padding: '50px 90px',
+    zIndex: 1000,
 }
 
 const overlay = {
