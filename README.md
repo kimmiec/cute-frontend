@@ -10,6 +10,7 @@ Welcome to Cute Delights! This is an app where I can create a blog post and add 
 - Express
 - React
 - Node JS
+- Heroku
 
 ## Screenshots:
 ### Home
