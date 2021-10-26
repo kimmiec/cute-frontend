@@ -4,7 +4,7 @@ import Modal from '../components/Modal'
 
 const btnWrap = {
     position: 'relative',
-    zIndex: 1
+    zIndex: 1,
 }
 
 const blogPost = {
@@ -45,7 +45,7 @@ function Home(props) {
             <div key={memo._id} className='blog' style={blogPost}>
                 <h2>{memo.name}</h2>
                 <img className='pic' src={memo.image} alt={memo.name} />
-                <p>{memo.desc}</p>
+                <p id='desc'>{memo.desc}</p>
             </div>
         ))
     }

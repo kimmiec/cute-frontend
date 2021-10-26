@@ -6,9 +6,9 @@
 .header {
   width: 100%;
   height: 400px;
-  background: url('https://i.imgur.com/GPxNPJW.jpg');
+  background: url('https://i.imgur.com/aSNNfmF.jpg');
   contain: content;
-  background-position: center bottom;
+  background-position: left;
   /* position: fixed; */
   /* top: 0; */
 }
@@ -17,17 +17,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-.header img{
-  /* background: url('https://i.imgur.com/tcrY8Qz.png'); */
-  background-size: cover;
-  background-position: bottom;
-  /* background-attachment: fixed; */
-  /* margin: 90px 0px 90px 0px; */
-  z-index: 0;
-  background-color: grey;
-}
-
 
 .nav {
   position: relative;
@@ -44,6 +33,9 @@
 .home, .recipes, .abt {
   display: inline-block;
   color: white;
+  font-family: 'kalam', cursive;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .imgDiv {
@@ -58,6 +50,8 @@
   margin: 0 auto;
   margin-top: 170px;
   font-family: 'satisfy', cursive;
+  font-size: 50px;
+  color: rgba(234,247,252,255);
 }
 
 /* display images */
@@ -73,23 +67,57 @@
 }
 
 h2 {
+  font-family: 'laila', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
   margin-top: 10px;
 }
 
-.name {
-  margin-top: 50px;
+
+button {
+  /* float: right; */
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'kalam', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: white;
 }
+
+#desc {
+  margin-bottom: -22px;
+}
+
 
 /* about me page */
 p {
   width: 70%;
   margin: 30px auto;
+  font-family: 'philosopher', sans-serif;
+  font-size: 18px;
 }
 
 .hi {
-  margin: 20px 0 20px;
+  margin: 40px 0 20px;
+  font-size: 40px;
 }
 
 .vanberry {
+  width: 350px;
+  height: 420px;
   border: 5px solid lavenderblush;
+}
+
+
+/* recipe page */
+#bakes {
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.name {
+  margin-top: 50px;
 }

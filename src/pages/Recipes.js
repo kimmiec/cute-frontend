@@ -22,7 +22,7 @@ function Recipes (props) {
                 <h2 className='name'>{ingred.name}</h2>
                 <img className='pic' src={ingred.image} alt={ingred.name} />
                 <div className='card' style={{maxHeight: '100%', overflowY: 'auto'}}>
-                <p>Recipe: {ingred.info}</p>
+                <p id='bakes'>Recipe: <br/><br/> {ingred.info}</p>
                 </div>
             </div>
             </>
